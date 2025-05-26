@@ -1,0 +1,30 @@
+/* Grid Container */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 12px;
+  }
+  
+
+  .column {
+    min-width: 0; 
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  /* Responsive adjustments - Less needed with grid! */
+  @media (max-width: 600px) {
+    .row {
+      grid-template-columns: 1fr; /* Single column on mobile */
+    }
+  }
